@@ -59,7 +59,8 @@ spec:
     targetPort: 8080
   selector:
     app: demo
-  type: NodePort
+  type: NodePort #loadblancer
+
 ---
 apiVersion: v1
 kind: Service
@@ -71,4 +72,4 @@ spec:
     targetPort: 8080
   selector:
     app: demo
-  type: NodePort
+  type: NodePort #loadblancer
